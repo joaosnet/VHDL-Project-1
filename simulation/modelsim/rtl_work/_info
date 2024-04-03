@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/joaod/Documents/GitHub/VHDL-Project-1/simulation/modelsim
 Emux
-Z1 w1712186042
+Z1 w1712187066
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ VRKGK=RR__RN;C;KZf^SYV2
 !s100 4z@?__i=`agYYTC;a`MRK0
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1712186178
+Z8 !s110 1712187564
 !i10b 1
-Z9 !s108 1712186178.000000
+Z9 !s108 1712187564.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd|
 Z11 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd|
 !i113 1
@@ -50,12 +50,12 @@ R11
 R12
 R13
 Esd
-R1
+Z14 w1712187475
 R3
 R4
 R0
-Z14 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd
-Z15 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd
+Z15 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd
+Z16 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd
 l0
 L4
 VOM623>ck[36MCgQJ?fXD:3
@@ -65,8 +65,8 @@ R7
 R8
 !i10b 1
 R9
-Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd|
-Z17 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd|
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd|
+Z18 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd|
 !i113 1
 R12
 R13
@@ -83,19 +83,19 @@ R7
 R8
 !i10b 1
 R9
-R16
 R17
+R18
 !i113 1
 R12
 R13
 Eshift
-R1
+Z19 w1712187046
 R2
 R3
 R4
 R0
-Z18 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd
-Z19 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd
+Z20 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd
+Z21 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd
 l0
 L5
 V^GenLz1nILMd@CDAz:N[>3
@@ -104,9 +104,9 @@ R7
 31
 R8
 !i10b 1
-R9
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd|
-Z21 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd|
+Z22 !s108 1712187563.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd|
+Z24 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd|
 !i113 1
 R12
 R13
@@ -123,31 +123,31 @@ R7
 31
 R8
 !i10b 1
-R9
-R20
-R21
+R22
+R23
+R24
 !i113 1
 R12
 R13
 Esomasub
-R1
+Z25 w1712187001
 R2
 R3
 R4
 R0
-Z22 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd
-Z23 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd
+Z26 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd
+Z27 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd
 l0
 L5
 V`cB9`iP48Q]I3HkF;4VgL0
 !s100 F@SWDTRGMB3aXbRP?>9g42
 R7
 31
-R8
+Z28 !s110 1712187563
 !i10b 1
-R9
-Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd|
-Z25 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd|
+R22
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd|
+Z30 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd|
 !i113 1
 R12
 R13
@@ -162,22 +162,22 @@ V3?@G<QWO>1d]@>H3EX15d1
 !s100 mKS9[XG<flV1[Xl:SQhXR0
 R7
 31
-R8
+R28
 !i10b 1
-R9
-R24
-R25
+R22
+R29
+R30
 !i113 1
 R12
 R13
 Etestbench
-Z26 w1712186045
+Z31 w1712186985
 R2
 R3
 R4
 R0
-Z27 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd
-Z28 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd
+Z32 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd
+Z33 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd
 l0
 L7
 V?iIUIH5LF>4B282mKjZ^m1
@@ -187,8 +187,8 @@ R7
 R8
 !i10b 1
 R9
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd|
-Z30 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd|
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd|
+Z35 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd|
 !i113 1
 R12
 R13
@@ -206,8 +206,8 @@ R7
 R8
 !i10b 1
 R9
-R29
-R30
+R34
+R35
 !i113 1
 R12
 R13

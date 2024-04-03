@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:16:18 on Apr 03,2024
+# Start time: 20:39:23 on Apr 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,11 +20,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity somasub
 # -- Compiling architecture comportamento of somasub
-# End time: 20:16:18 on Apr 03,2024, Elapsed time: 0:00:00
+# End time: 20:39:23 on Apr 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:16:18 on Apr 03,2024
+# Start time: 20:39:23 on Apr 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -32,22 +32,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity shift
 # -- Compiling architecture comportamento of shift
-# End time: 20:16:18 on Apr 03,2024, Elapsed time: 0:00:00
+# End time: 20:39:24 on Apr 03,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:16:18 on Apr 03,2024
+# Start time: 20:39:24 on Apr 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sd
 # -- Compiling architecture comportamento of sd
-# End time: 20:16:18 on Apr 03,2024, Elapsed time: 0:00:00
+# End time: 20:39:24 on Apr 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:16:18 on Apr 03,2024
+# Start time: 20:39:24 on Apr 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -55,11 +55,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity mux
 # -- Compiling architecture comportamento of mux
-# End time: 20:16:18 on Apr 03,2024, Elapsed time: 0:00:00
+# End time: 20:39:24 on Apr 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:16:18 on Apr 03,2024
+# Start time: 20:39:24 on Apr 03,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -67,36 +67,6 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity testbench
 # -- Compiling architecture test of testbench
-# End time: 20:16:18 on Apr 03,2024, Elapsed time: 0:00:00
+# End time: 20:39:24 on Apr 03,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.mux work.sd work.shift work.somasub work.testbench
-# vsim work.mux work.sd work.shift work.somasub work.testbench 
-# Start time: 20:16:40 on Apr 03,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.mux(comportamento)
-# Loading work.sd(comportamento)
-# Loading work.shift(comportamento)
-# Loading work.somasub(comportamento)
-# Loading work.testbench(test)
-# ** Warning: (vsim-7) Failed to open VHDL file "C:\Users\ilanc\QuartusII\phi15\entradas.txt" in rb mode.
-# No such file or directory. (errno = ENOENT)
-#    Time: 0 ps  Iteration: 0  Instance: /testbench
-# ** Warning: (vsim-7) Failed to open VHDL file "C:\Users\ilanc\QuartusII\phi15\saida.txt" in r+ mode.
-# No such file or directory. (errno = ENOENT)
-#    Time: 0 ps  Iteration: 0  Instance: /testbench
-add wave -position insertpoint  \
-sim:/mux/nbits \
-sim:/mux/in_a \
-sim:/mux/in_a(3) \
-sim:/mux/in_a(2) \
-sim:/mux/in_a(1) \
-sim:/mux/in_a(0) \
-sim:/mux/in_b \
-sim:/mux/sel \
-sim:/mux/resultado
-# End time: 20:20:46 on Apr 03,2024, Elapsed time: 0:04:06
-# Errors: 0, Warnings: 2
