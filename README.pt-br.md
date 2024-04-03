@@ -1,4 +1,4 @@
-# VHDL Project 1
+# Projeto de sistemas digitais combinacionais em VHDL – Projeto 1
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/joaosnet/vhdl-project-1?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/joaosnet/vhdl-project-1?style=for-the-badge)
@@ -9,13 +9,21 @@
 
 <img align="right" height="256" src="https://github.com/joaosnet/vhdl-project-1/blob/main/images/1_APP.png"/>
 
-## Project Description
+## Descrição do Projeto
+● Deseja-se projetar uma Unidade Lógica Aritmética (ALU) que realiza as operações de soma, subtração, AND, OR, NOT, deslocamento de 1 bit para esquerda, deslocamento de 1 bit para direita, incremento de 1, decremento de 1;
+
+● Esta ALU tem duas entradas de dados A e B;
+
+● E uma saída S.
+
+● O resultado será atribuído à S de acordo com uma das operações selecionadas, para isso há uma entrada auxiliar, denominada SEL que indica que operação deverá ser realizada.
+
+● Deve-se projetar um arquivo VHDL para cada operação, que deverão ser conectados em outro arquivo VHDL (top-level). Deve-se usar a biblioteca numeric_std (operandos +,-,and, ...)
+
+## Habilidades Desenvolvidas
 
 
-## Skills Developed
-
-
-## 🤝 Contributors
+## 🤝 Contribuintes
 
 <table>
     <tr>
