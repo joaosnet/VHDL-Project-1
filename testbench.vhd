@@ -49,7 +49,7 @@ begin
 	end process;
 	
 	process(clock) -- Processo sensível ao sinal clock
-		file F: TEXT open READ_MODE is "C:\Users\ilanc\QuartusII\phi15\entradas.txt"; -- Abre o arquivo de texto "entradas.txt" para leitura
+		file F: TEXT open READ_MODE is "C:\Users\joaod\Documents\GitHub\VHDL-Project-1\entradas.txt"; -- Abre o arquivo de texto "entradas.txt" para leitura
 		variable L: LINE; -- Variável local L do tipo LINE
 		variable entrada : integer; -- Variável local entrada do tipo integer
 	begin
@@ -71,7 +71,7 @@ begin
 	end process;
 	
 	process(clock) -- Processo sensível ao sinal clock
-		file F: TEXT open WRITE_MODE is "C:\Users\ilanc\QuartusII\phi15\saida.txt"; -- Abre o arquivo de texto "saida.txt" para escrita
+		file F: TEXT open WRITE_MODE is "C:\Users\joaod\Documents\GitHub\VHDL-Project-1\saida.txt"; -- Abre o arquivo de texto "saida.txt" para escrita
 		variable L: LINE; -- Variável local L do tipo LINE
 	begin
 		if rising_edge(clock) then -- Se ocorrer uma borda de subida do sinal clock
