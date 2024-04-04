@@ -7,7 +7,7 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/joaosnet/vhdl-project-1?style=for-the-badge)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/joaosnet/vhdl-project-1/blob/master/README.pt-br.md)
 
-<img align="right" height="256" src="https://github.com/joaosnet/vhdl-project-1/blob/main/images/1_APP.png"/>
+<img align="right" height="256" src="https://github.com/joaosnet/vhdl-project-1/blob/main/images/1.png"/>
 
 ## Descrição do Projeto
 ● Deseja-se projetar uma Unidade Lógica Aritmética (ALU) que realiza as operações de soma, subtração, AND, OR, NOT, deslocamento de 1 bit para esquerda, deslocamento de 1 bit para direita, incremento de 1, decremento de 1;
