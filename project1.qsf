@@ -52,11 +52,20 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name VHDL_FILE somasub.vhd
-set_global_assignment -name VHDL_FILE shift.vhd
-set_global_assignment -name VHDL_FILE sd.vhd
-set_global_assignment -name VHDL_FILE mux.vhd
+set_global_assignment -name VHDL_FILE or_logic.vhd
+set_global_assignment -name VHDL_FILE not_a.vhd
+set_global_assignment -name VHDL_FILE and_logic.vhd
 set_global_assignment -name VHDL_FILE testbench.vhd
+set_global_assignment -name VHDL_FILE subtracao.vhd
+set_global_assignment -name VHDL_FILE soma.vhd
+set_global_assignment -name VHDL_FILE shiftright.vhd
+set_global_assignment -name VHDL_FILE shiftleft.vhd
+set_global_assignment -name VHDL_FILE sd.vhd
+set_global_assignment -name VHDL_FILE or.vhd
+set_global_assignment -name VHDL_FILE not_b.vhd
+set_global_assignment -name VHDL_FILE nmenosum.vhd
+set_global_assignment -name VHDL_FILE nmaisum.vhd
+set_global_assignment -name VHDL_FILE and.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

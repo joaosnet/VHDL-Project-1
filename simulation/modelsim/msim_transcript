@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:39:23 on Apr 03,2024
+# Start time: 08:03:01 on Apr 05,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,11 +20,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity somasub
 # -- Compiling architecture comportamento of somasub
-# End time: 20:39:23 on Apr 03,2024, Elapsed time: 0:00:00
+# End time: 08:03:01 on Apr 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:39:23 on Apr 03,2024
+# Start time: 08:03:01 on Apr 05,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -32,22 +32,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity shift
 # -- Compiling architecture comportamento of shift
-# End time: 20:39:24 on Apr 03,2024, Elapsed time: 0:00:01
+# End time: 08:03:01 on Apr 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:39:24 on Apr 03,2024
+# Start time: 08:03:01 on Apr 05,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sd
 # -- Compiling architecture comportamento of sd
-# End time: 20:39:24 on Apr 03,2024, Elapsed time: 0:00:00
+# End time: 08:03:01 on Apr 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:39:24 on Apr 03,2024
+# Start time: 08:03:01 on Apr 05,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -55,11 +55,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity mux
 # -- Compiling architecture comportamento of mux
-# End time: 20:39:24 on Apr 03,2024, Elapsed time: 0:00:00
+# End time: 08:03:01 on Apr 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:39:24 on Apr 03,2024
+# Start time: 08:03:01 on Apr 05,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -67,6 +67,38 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity testbench
 # -- Compiling architecture test of testbench
-# End time: 20:39:24 on Apr 03,2024, Elapsed time: 0:00:00
+# End time: 08:03:01 on Apr 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 08:03:24 on Apr 05,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.sd(comportamento)
+# Loading work.somasub(comportamento)
+# Loading work.mux(comportamento)
+# Loading work.shift(comportamento)
+add wave -position insertpoint  \
+sim:/testbench/input_a \
+sim:/testbench/input_b \
+sim:/testbench/input_c \
+sim:/testbench/resultado \
+sim:/testbench/sel_somasub \
+sim:/testbench/sel_mux \
+sim:/testbench/clock \
+sim:/testbench/somasub_val \
+sim:/testbench/mux_val
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: joaod  Hostname: FOX  ProcessID: 20432
+#           Attempting to use alternate WLF file "./wlftc7x1f8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftc7x1f8
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 ns  Iteration: 0  Instance: /testbench
+# End time: 08:04:56 on Apr 05,2024, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 3

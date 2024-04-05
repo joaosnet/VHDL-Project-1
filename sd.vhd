@@ -1,90 +1,150 @@
-library IEEE; -- Biblioteca padrão IEEE para VHDL
-use ieee.std_logic_1164.all; -- Importa o pacote std_logic_1164 da biblioteca IEEE
+-- UNIDADE LÓGICA E ARITMÉTICA (ALU) EM VHDL
 
-entity sd is -- Declaração da entidade "sd"
-	port(
-		in_a, in_b, in_c : in std_logic_vector(31 downto 0); -- Portas de entrada in_a, in_b e in_c do tipo std_logic_vector de tamanho 32 bits
-		sel_somasub, sel_mux : in std_logic; -- Portas de entrada sel_somasub e sel_mux do tipo std_logic
-		resultado : out std_logic_vector(31 downto 0) -- Porta de saída resultado do tipo std_logic_vector de tamanho 32 bits
-	);
-end sd; -- Fim da declaração da entidade "sd"
+-- Tabela verde para seleção de operações da ALU
 
-architecture comportamento of sd is -- Declaração da arquitetura "comportamento" para a entidade "sd"
-	component somasub is -- Declaração do componente "somasub"
-	generic(
-		nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
-	);
-	port(
-		op_a, op_b : in std_logic_vector(nbits-1 downto 0); -- Portas de entrada op_a e op_b do tipo std_logic_vector de tamanho nbits
-		sel : in std_logic; -- Porta de entrada sel do tipo std_logic
-		resultado : out std_logic_vector(nbits-1 downto 0) -- Porta de saída resultado do tipo std_logic_vector de tamanho nbits
-	);
-	end component; -- Fim da declaração do componente "somasub"
-	
-	component mux is -- Declaração do componente "mux"
-	generic(
-		nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
-	);
-	port(
-		in_a, in_b : in std_logic_vector(nbits-1 downto 0); -- Portas de entrada in_a e in_b do tipo std_logic_vector de tamanho nbits
-		sel : in std_logic; -- Porta de entrada sel do tipo std_logic
-		resultado : out std_logic_vector(nbits-1 downto 0) -- Porta de saída resultado do tipo std_logic_vector de tamanho nbits
-	);
-	end component; -- Fim da declaração do componente "mux"
-	
-	component shift is -- Declaração do componente "shift"
-	generic(
-		nbits : integer := 4; -- Parâmetro genérico nbits com valor padrão 4
-		shift : integer := 4; -- Parâmetro genérico shift com valor padrão 4
-		shift_config : string := "esquerda" -- Parâmetro genérico shift_config do tipo string com valor padrão "esquerda"
-	);
-	port(
-		op_a : in std_logic_vector(nbits-1 downto 0); -- Porta de entrada op_a do tipo std_logic_vector de tamanho nbits
-		resultado : out std_logic_vector(nbits-1 downto 0) -- Porta de saída resultado do tipo std_logic_vector de tamanho nbits
-	);
-	end component; -- Fim da declaração do componente "shift"
-	
-	constant nbits_config : integer := 32; -- Constante nbits_config do tipo integer com valor 32
-	constant nbits_shift : integer := 4; -- Constante nbits_shift do tipo integer com valor 4
-	constant shift_config : string := "esquerda"; -- Constante shift_config do tipo string com valor "esquerda"
-	
-	signal res_somasub : std_logic_vector(nbits_config-1 downto 0); -- Sinal res_somasub do tipo std_logic_vector de tamanho nbits_config
-	signal mux_output, and_result : std_logic_vector(nbits_config-1 downto 0); -- Sinais mux_output e and_result do tipo std_logic_vector de tamanho nbits_config
-	
+-- sel3 sel2 sel1 sel0  | operação              [A0..A3] [B0..B3]
+-- --------------------------------                     _______   ______
+--    0    0    0    0  | A + B                         \      \ /     /
+--    0    0    0    1  | A - B             [s0..s3]     \      ALU   /
+--    0    0    1    0  | A and B                         \__________/
+--    0    0    1    1  | A or B
+--    0    1    0    0  | not A
+--    0    1    0    1  | not b
+--    0    1    1    0  | << (shift left)
+--    0    1    1    1  | >> (shift right)
+--    1    0    0    0  | n + 1
+--    1    0    0    1  | n - 1
+
+-- Autor: João da Cruz de Nativiade e Silva Neto
+-- Data: 04/04/2024
+
+-- Curso: Engenharia de Computação
+-- Disciplina: Projetos de Hardware e Interfaceamento
+
+library IEEE;
+library work;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity sd is
+    port(
+        in_a, in_b, in_c : in std_logic_vector(31 downto 0);
+        sel : in std_logic_vector(3 downto 0);
+        resultado : out std_logic_vector(31 downto 0)
+    );
+end sd;
+
+architecture comportamento of sd is
+    component Soma
+        port(
+            A, B : in std_logic_vector(31 downto 0);
+            Resultado : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component Subtracao
+        port(
+            A, B : in std_logic_vector(31 downto 0);
+            Resultado : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component And_Logic
+        port(
+            A, B : in std_logic_vector(31 downto 0);
+            Resultado : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component Or_Logic
+        port(
+            A, B : in std_logic_vector(31 downto 0);
+            Resultado : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component not_a
+        port(
+            A : in std_logic_vector(31 downto 0);
+            Resultado : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component not_b
+        port(
+            B : in std_logic_vector(31 downto 0);
+            Resultado : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component ShiftLeft
+        port(
+            A : in std_logic_vector(31 downto 0);
+            Resultado : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component ShiftRight
+        port(
+            A : in std_logic_vector(31 downto 0);
+            Resultado : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component NmaisUm
+        port(
+            A : in std_logic_vector(31 downto 0);
+            Resultado : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component NmenosUm
+        port(
+            A : in std_logic_vector(31 downto 0);
+            Resultado : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    signal res : std_logic_vector(31 downto 0);
+
+
 begin
-	inst_somasub : somasub -- Instanciação do componente "somasub" com o nome "inst_somasub"
-	generic map(
-		nbits => nbits_config -- Mapeamento do parâmetro genérico nbits para o valor de nbits_config
-	)
-	port map(
-		op_a => in_a, -- Mapeamento da porta de entrada op_a para a porta de entrada in_a
-		op_b => in_b, -- Mapeamento da porta de entrada op_b para a porta de entrada in_b
-		sel => sel_somasub, -- Mapeamento da porta de entrada sel para a porta de entrada sel_somasub
-		resultado => res_somasub -- Mapeamento da porta de saída resultado para o sinal res_somasub
-	);
-	
-	inst_mux : mux -- Instanciação do componente "mux" com o nome "inst_mux"
-	generic map(
-		nbits => nbits_config -- Mapeamento do parâmetro genérico nbits para o valor de nbits_config
-	)
-	port map(
-		in_a => res_somasub, -- Mapeamento da porta de entrada in_a para o sinal res_somasub
-		in_b => in_c, -- Mapeamento da porta de entrada in_b para a porta de entrada in_c
-		sel => sel_mux, -- Mapeamento da porta de entrada sel para a porta de entrada sel_mux
-		resultado => mux_output -- Mapeamento da porta de saída resultado para o sinal mux_output
-	);
-	
-	and_result <= in_a and mux_output; -- Atribuição da operação AND entre in_a e mux_output ao sinal and_result
-	
-	inst_shift : shift -- Instanciação do componente "shift" com o nome "inst_shift"
-	generic map(
-		nbits => nbits_config, -- Mapeamento do parâmetro genérico nbits para o valor de nbits_config
-		shift => nbits_shift, -- Mapeamento do parâmetro genérico shift para o valor de nbits_shift
-		shift_config => shift_config -- Mapeamento do parâmetro genérico shift_config para o valor de shift_config
-	)
-	port map(
-		op_a => and_result, -- Mapeamento da porta de entrada op_a para o sinal and_result
-		resultado => resultado -- Mapeamento da porta de saída resultado para a porta de saída resultado
-	);
-	
-end comportamento; -- Fim da arquitetura "comportamento" para a entidade "sd"
+    inst_soma : soma port map(A => in_a, B => in_b, Resultado => res);
+    inst_subtracao : subtracao port map(A => in_a, B => in_b, Resultado => res);
+    inst_and : and_logic port map(A => in_a, B => in_b, Resultado => res);
+    inst_or : or_logic port map(A => in_a, B => in_b, Resultado => res);
+    inst_notA : not_a port map(A => in_a, Resultado => res);
+    inst_notB : not_b port map(B => in_b, Resultado => res);
+    inst_shiftLeft : shiftleft port map(A => in_a, Resultado => res);
+    inst_shiftRight : shiftright port map(A => in_a, Resultado => res);
+    inst_nmaisum : nmaisum port map(A => in_a, Resultado => res);
+    inst_nmenosum : nmenosum port map(A => in_a, Resultado => res);
+    process(sel)
+    begin
+        case sel is
+            when "0000" =>
+                res <= inst_soma.Resultado;
+            when "0001" =>
+                res <= inst_subtracao.Resultado;
+            when "0010" =>
+                res <= inst_and.Resultado;
+            when "0011" =>
+                res <= inst_or.Resultado;
+            when "0100" =>
+                res <= inst_notA.Resultado;
+            when "0101" =>
+                res <= inst_notB.Resultado;
+            when "0110" =>
+                res <= inst_shiftLeft.Resultado;
+            when "0111" =>
+                res <= inst_shiftRight.Resultado;
+            when "1000" =>
+                res <= inst_nmaisum.Resultado;
+            when "1001" =>
+                res <= inst_nmenosum.Resultado;
+            when others =>
+                res <= (others => '0');
+        end case;
+    end process;
+
+    resultado <= res;
+end comportamento;
