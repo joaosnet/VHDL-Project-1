@@ -7,7 +7,7 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/joaosnet/vhdl-project-1?style=for-the-badge)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/joaosnet/vhdl-project-1/blob/master/README.pt-br.md)
 
-<img align="right" height="256" src="https://github.com/joaosnet/vhdl-project-1/blob/main/images/1.png"/>
+<img src="https://github.com/joaosnet/vhdl-project-1/blob/main/images/1.png"/>
 
 
 ## Descrição do Projeto
