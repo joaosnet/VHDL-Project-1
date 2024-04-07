@@ -9,7 +9,7 @@ entity not_a is
     port(
         A : in std_logic_vector(nbits-1 downto 0);
         sel : in std_logic_vector(3 downto 0);
-        resultado : out std_logic_vector(nbits-1 downto 0)
+        S : out std_logic_vector(nbits-1 downto 0)
     );
 end not_a;
 
@@ -17,5 +17,5 @@ architecture comportamento of not_a is
     signal nota : std_logic_vector(nbits-1 downto 0);
 begin
     nota <= std_logic_vector(not unsigned(A));
-    resultado <= nota when sel="0100" else (others => '0');
+    S <= nota when sel="0100";
 end comportamento;

@@ -1,5 +1,5 @@
 Analysis & Elaboration report for project1
-Fri Apr 05 10:00:44 2024
+Sun Apr 07 19:03:29 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Failed - Fri Apr 05 10:00:44 2024           ;
+; Analysis & Elaboration Status ; Failed - Sun Apr 07 19:03:29 2024           ;
 ; Quartus Prime Version         ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                 ; project1                                    ;
 ; Top-level Entity Name         ; testbench                                   ;
@@ -161,53 +161,93 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Apr 05 10:00:35 2024
+    Info: Processing started: Sun Apr 07 19:03:21 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project1 -c project1 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file or_logic.vhd
-    Info (12022): Found design unit 1: Or_Logic-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 11
-    Info (12023): Found entity 1: Or_Logic File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file not_a.vhd
-    Info (12022): Found design unit 1: not_a-comportamento File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 16
-    Info (12023): Found entity 1: not_a File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file and_logic.vhd
-    Info (12022): Found design unit 1: And_Logic-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 11
-    Info (12023): Found entity 1: And_Logic File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhd
     Info (12022): Found design unit 1: testbench-test File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd Line: 32
     Info (12023): Found entity 1: testbench File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd Line: 29
 Info (12021): Found 2 design units, including 1 entities, in source file subtracao.vhd
-    Info (12022): Found design unit 1: Subtracao-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 12
+    Info (12022): Found design unit 1: Subtracao-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 16
     Info (12023): Found entity 1: Subtracao File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file soma.vhd
-    Info (12022): Found design unit 1: Soma-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/soma.vhd Line: 12
+    Info (12022): Found design unit 1: Soma-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/soma.vhd Line: 16
     Info (12023): Found entity 1: Soma File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/soma.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file shiftright.vhd
-    Info (12022): Found design unit 1: ShiftRight-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftright.vhd Line: 11
+    Info (12022): Found design unit 1: ShiftRight-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftright.vhd Line: 15
     Info (12023): Found entity 1: ShiftRight File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftright.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file shiftleft.vhd
-    Info (12022): Found design unit 1: ShiftLeft-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 11
+    Info (12022): Found design unit 1: ShiftLeft-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 15
     Info (12023): Found entity 1: ShiftLeft File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file sd.vhd
-    Info (12022): Found design unit 1: sd-comportamento File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 36
+    Info (12022): Found design unit 1: sd-comportamento File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 39
     Info (12023): Found entity 1: sd File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 28
-Warning (12019): Can't analyze file -- file or.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file or_logic.vhd
+    Info (12022): Found design unit 1: Or_Logic-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 15
+    Info (12023): Found entity 1: Or_Logic File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file not_b.vhd
     Info (12022): Found design unit 1: notb-comportamento File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_b.vhd Line: 16
     Info (12023): Found entity 1: notb File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_b.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file not_a.vhd
+    Info (12022): Found design unit 1: not_a-comportamento File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 16
+    Info (12023): Found entity 1: not_a File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file nmenosum.vhd
-    Info (12022): Found design unit 1: NmenosUm-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 11
+    Info (12022): Found design unit 1: NmenosUm-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 15
     Info (12023): Found entity 1: NmenosUm File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file nmaisum.vhd
-    Info (12022): Found design unit 1: NmaisUm-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 11
+    Info (12022): Found design unit 1: NmaisUm-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 15
     Info (12023): Found entity 1: NmaisUm File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 6
-Warning (12019): Can't analyze file -- file and.vhd is missing
-Error (10366): VHDL Selected Name error at sd.vhd(125): prefix does not denote an object that declares a named scope File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 125
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 1 error, 3 warnings
-    Error: Peak virtual memory: 4837 megabytes
-    Error: Processing ended: Fri Apr 05 10:00:44 2024
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:05
+Info (12021): Found 2 design units, including 1 entities, in source file and_logic.vhd
+    Info (12022): Found design unit 1: And_Logic-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 15
+    Info (12023): Found entity 1: And_Logic File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 5
+Info (12127): Elaborating entity "testbench" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "A" at testbench.vhd(41) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd Line: 41
+Warning (10873): Using initial value X (don't care) for net "B" at testbench.vhd(41) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd Line: 41
+Warning (10873): Using initial value X (don't care) for net "sel" at testbench.vhd(42) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd Line: 42
+Info (12128): Elaborating entity "sd" for hierarchy "sd:dut" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd Line: 47
+Info (12128): Elaborating entity "Soma" for hierarchy "sd:dut|Soma:inst_soma" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 126
+Info (12128): Elaborating entity "Subtracao" for hierarchy "sd:dut|Subtracao:inst_subtracao" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 127
+Info (10041): Inferred latch for "S[0]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[1]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[2]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[3]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (12128): Elaborating entity "And_Logic" for hierarchy "sd:dut|And_Logic:inst_and" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 128
+Info (10041): Inferred latch for "S[0]" at and_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 19
+Info (10041): Inferred latch for "S[1]" at and_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 19
+Info (10041): Inferred latch for "S[2]" at and_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 19
+Info (10041): Inferred latch for "S[3]" at and_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 19
+Info (12128): Elaborating entity "Or_Logic" for hierarchy "sd:dut|Or_Logic:inst_or" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 129
+Info (10041): Inferred latch for "S[0]" at or_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 19
+Info (10041): Inferred latch for "S[1]" at or_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 19
+Info (10041): Inferred latch for "S[2]" at or_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 19
+Info (10041): Inferred latch for "S[3]" at or_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 19
+Info (12128): Elaborating entity "not_a" for hierarchy "sd:dut|not_a:inst_notA" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 130
+Info (10041): Inferred latch for "S[0]" at not_a.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 20
+Info (10041): Inferred latch for "S[1]" at not_a.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 20
+Info (10041): Inferred latch for "S[2]" at not_a.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 20
+Info (10041): Inferred latch for "S[3]" at not_a.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 20
+Info (12128): Elaborating entity "ShiftLeft" for hierarchy "sd:dut|ShiftLeft:inst_shiftLeft" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 132
+Info (10041): Inferred latch for "S[0]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[1]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[2]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[3]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (12128): Elaborating entity "ShiftRight" for hierarchy "sd:dut|ShiftRight:inst_shiftRight" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 133
+Info (12128): Elaborating entity "NmaisUm" for hierarchy "sd:dut|NmaisUm:inst_nmaisum" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 134
+Info (10041): Inferred latch for "S[0]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[1]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[2]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[3]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (12128): Elaborating entity "NmenosUm" for hierarchy "sd:dut|NmenosUm:inst_nmenosum" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 135
+Info (10041): Inferred latch for "S[0]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[1]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[2]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[3]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Error (12006): Node instance "inst_notB" instantiates undefined entity "not_b". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 131
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 1 error, 4 warnings
+    Error: Peak virtual memory: 4841 megabytes
+    Error: Processing ended: Sun Apr 07 19:03:29 2024
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:00
 
 

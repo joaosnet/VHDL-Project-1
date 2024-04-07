@@ -1,20 +1,17 @@
--- or.vhd
+-- subtracao.vhd
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
-entity Or_Logic is
-	generic(
-		nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
-	);
+entity Subtracao is
     Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
            B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
            sel : in  STD_LOGIC_VECTOR (3 downto 0);
            S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
-end Or_Logic;
+end Subtracao;
 
-architecture Behavior of Or_Logic is
-signal or_gate : STD_LOGIC_VECTOR (nbits-1 downto 0);
+architecture Behavior of Subtracao is
 begin
-    or_gate <= A or B;
-    S <= or_gate when sel="0011";
+    subtracao <= std_logic_vector(signed(A) - signed(B));
+    S <= subtracao when sel="0001";
 end Behavior;

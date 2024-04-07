@@ -4,11 +4,17 @@ use ieee.std_logic_1164.all; -- Pacote que define o tipo de dados std_logic e op
 use ieee.numeric_std.all; -- Pacote que define o tipo de dados unsigned e operações relacionadas
 
 entity ShiftLeft is
-    Port ( A : in  STD_LOGIC_VECTOR (31 downto 0);
-           Resultado : out  STD_LOGIC_VECTOR (31 downto 0));
+	generic(
+		nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
+	);
+    Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+           sel : in  STD_LOGIC_VECTOR (3 downto 0);
+           S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
 end ShiftLeft;
 
 architecture Behavior of ShiftLeft is
+    signal shiftleft : STD_LOGIC_VECTOR (nbits-1 downto 0);
 begin
-    Resultado <= std_logic_vector(shift_left(unsigned(A), 1));
+    shiftleft <= std_logic_vector(shift_left(unsigned(A), 1));
+    S <= shiftleft when sel = "0110";
 end Behavior;

@@ -32,13 +32,13 @@ end testbench;
 architecture test of testbench is
 	component sd
 		port(
-			in_a, in_b, in_c : in std_logic_vector(31 downto 0);
+			in_a, in_b : in std_logic_vector(31 downto 0);
 			sel : in std_logic_vector(3 downto 0);
-			resultado : out std_logic_vector(31 downto 0)
+			S : out std_logic_vector(31 downto 0)
 		);
 	end component;
 
-	signal A, B, C, Result : std_logic_vector(31 downto 0);
+	signal A, B, Result : std_logic_vector(31 downto 0);
 	signal sel : std_logic_vector(3 downto 0);
 
 	signal clock : std_logic := '0';
@@ -48,9 +48,8 @@ begin
 	port map(
 		in_a => A,
 		in_b => B,
-		in_c => C,
 		sel => sel,
-		resultado => Result
+		S => Result
 	);
 
 	process(clock)
@@ -63,15 +62,11 @@ begin
 				READLINE(F, L);
 				READ(L, entrada);
 				A <= std_logic_vector(to_unsigned(entrada, 32));
-	
+
 				READLINE(F, L);
 				READ (L, entrada);
 				B <= std_logic_vector(to_unsigned(entrada, 32));
-	
-				READLINE(F, L);
-				READ (L, entrada);
-				C <= std_logic_vector(to_unsigned(entrada, 32));
-	
+
 				sel <= std_logic_vector(to_unsigned((to_integer(unsigned(sel)) + 1) mod 16, sel'length));
 			end if;
 		end if;

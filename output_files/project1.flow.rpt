@@ -1,5 +1,5 @@
 Flow report for project1
-Fri Apr 05 10:00:44 2024
+Sun Apr 07 19:03:29 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Fri Apr 05 10:00:44 2024      ;
+; Flow Status                 ; Flow Failed - Sun Apr 07 19:03:29 2024      ;
 ; Quartus Prime Version       ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name               ; project1                                    ;
 ; Top-level Entity Name       ; testbench                                   ;
@@ -63,7 +63,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/05/2024 10:00:35 ;
+; Start date & time ; 04/07/2024 19:03:21 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; project1            ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 5218847649765.171232203532280          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 5218847649765.171252740122416          ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -95,8 +95,8 @@ agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 4837 MB             ; 00:00:05                           ;
-; Total                  ; 00:00:09     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 4841 MB             ; 00:00:00                           ;
+; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:00                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
