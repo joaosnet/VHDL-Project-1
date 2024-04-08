@@ -16,5 +16,5 @@ architecture Behavior of orlogic is
 signal or_gate : STD_LOGIC_VECTOR (nbits-1 downto 0);
 begin
     or_gate <= A or B;
-    S <= or_gate when sel="0011";
+    S <= or_gate when sel="0011" else (others => '0');
 end Behavior;

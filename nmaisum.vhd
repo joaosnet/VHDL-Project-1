@@ -16,5 +16,5 @@ architecture Behavior of NmaisUm is
     signal nmaisum : std_logic_vector(nbits-1 downto 0);
 begin
     nmaisum <= std_logic_vector(unsigned(A) + 1);
-    S <= nmaisum when sel="1000";
+    S <= nmaisum when sel="1000" else (others => '0');
 end Behavior;

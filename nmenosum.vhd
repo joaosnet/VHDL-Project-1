@@ -16,5 +16,5 @@ architecture Behavior of NmenosUm is
 signal nmenosum : STD_LOGIC_VECTOR (nbits-1 downto 0);
 begin
     nmenosum <= std_logic_vector(unsigned(A) - 1);
-    S <= nmenosum when sel="1001";
+    S <= nmenosum when sel="1001" else (others => '0');
 end Behavior;

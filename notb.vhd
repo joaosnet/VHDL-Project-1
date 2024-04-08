@@ -18,5 +18,5 @@ architecture comportamento of notb is -- Declaração da arquitetura comportamen
 	signal notb1 : std_logic_vector(nbits-1 downto 0); -- Declaração dos sinais notb e sub do tipo std_logic_vector
 begin
 	notb1 <= std_logic_vector(not unsigned(B)); -- notb dos valores de op_a e B convertidos para unsigned e depois convertidos para std_logic_vector
-	S <= notb1 when sel="0101"; -- Atribuição do valor de notb para S quando sel é '0110', caso contrário, atribui o valor de sub para S
+	S <= notb1 when sel="0101" else (others => '0'); -- Atribuição do valor de notb para S quando sel é '0110', caso contrário, atribui o valor de sub para S
 end comportamento;

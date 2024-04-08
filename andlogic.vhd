@@ -16,5 +16,5 @@ architecture Behavior of andlogic is
     signal and_gate : STD_LOGIC_VECTOR (nbits-1 downto 0);
 begin
     and_gate <= A and B;
-    S <= and_gate when sel="0010";
+    S <= and_gate when sel="0010" else (others => '0');
 end Behavior;

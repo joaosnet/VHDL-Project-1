@@ -38,7 +38,7 @@ architecture test of testbench is
 		);
 	end component;
 
-	signal A, B, Result : std_logic_vector(31 downto 0);
+	signal A, B, S : std_logic_vector(31 downto 0);
 	signal sel : std_logic_vector(3 downto 0);
 
 	signal clock : std_logic := '0';
@@ -49,7 +49,7 @@ begin
 		in_a => A,
 		in_b => B,
 		sel => sel,
-		S => Result
+		S => S
 	);
 
 	process(clock)
@@ -77,8 +77,10 @@ begin
 		variable L: LINE;
 	begin
 		if rising_edge(clock) then
-			WRITE (L, to_integer(unsigned(Result)));
-			WRITELINE (F, L);
+			WRITE (L, to_integer(unsigned(S))); -- Escreve o valor inteiro convertido do sinal resultado em L
+			WRITE (L, ' '); -- Escreve um espaço em L
+			WRITE (L, to_bitvector(sel)); -- Escreve o valor do sinal sel em L
+			WRITELINE (F, L); -- Escreve a linha L no arquivo F
 		end if;
 	end process;
 

@@ -17,5 +17,5 @@ architecture Behavior of Subtracao is
 signal sub : std_logic_vector(nbits-1 downto 0);
 begin
     sub <= std_logic_vector(signed(A) - signed(B));
-    S <= sub when sel="0001";
+    S <= sub when sel="0001" else (others => '0');
 end Behavior;

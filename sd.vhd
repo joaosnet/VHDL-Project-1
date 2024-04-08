@@ -138,6 +138,7 @@ architecture comportamento of sd is
     constant nbits_config : integer := 32; -- Constante nbits_config do tipo integer com valor 32
 
     signal res : std_logic_vector(nbits_config-1 downto 0);
+    signal res_soma, res_subtracao, res_and, res_or, res_notA, res_notB, res_shiftLeft, res_shiftRight, res_nmaisum, res_nmenosum : std_logic_vector(nbits_config-1 downto 0);
 
 
 begin
@@ -149,53 +150,79 @@ begin
         A => in_a, 
         B => in_b, 
         sel => sel, 
-        S => res
+        S => res_soma
     );
     inst_subtracao : subtracao 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, B => in_b, sel => sel, S => res);
+    port map(A => in_a, B => in_b, sel => sel, S => res_subtracao);
     inst_and : andlogic 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, B => in_b, sel => sel, S => res);
+    port map(A => in_a, B => in_b, sel => sel, S => res_and);
     inst_or : orlogic
     generic map(
         nbits => nbits_config
     ) 
-    port map(A => in_a, B => in_b, sel => sel, S => res);
+    port map(A => in_a, B => in_b, sel => sel, S => res_or);
     inst_notA : nota 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, sel => sel, S => res);
+    port map(A => in_a, sel => sel, S => res_notA);
     inst_notB : notb 
     generic map(
         nbits => nbits_config
     )
-    port map(B => in_b, sel => sel, S => res);
+    port map(B => in_b, sel => sel, S => res_notB);
     inst_shiftLeft : shiftleft 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, sel => sel, S => res);
+    port map(A => in_a, sel => sel, S => res_shiftLeft);
     inst_shiftRight : shiftright 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, sel => sel, S => res);
+    port map(A => in_a, sel => sel, S => res_shiftRight);
     inst_nmaisum : nmaisum 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, sel => sel, S => res);
+    port map(A => in_a, sel => sel, S => res_nmaisum);
     inst_nmenosum : nmenosum 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, sel => sel, S => res);
+    port map(A => in_a, sel => sel, S => res_nmenosum);
 
-    S <= res;
+    process(sel, res_soma, res_subtracao, res_and, res_or, res_notA, res_notB, res_shiftLeft, res_shiftRight, res_nmaisum, res_nmenosum)
+    begin
+        case sel is
+            when "0000" =>
+                S <= res_soma;
+            when "0001" =>
+                S <= res_subtracao;
+            when "0010" =>
+                S <= res_and;
+            when "0011" =>
+                S <= res_or;
+            when "0100" =>
+                S <= res_notA;
+            when "0101" =>
+                S <= res_notB;
+            when "0110" =>
+                S <= res_shiftLeft;
+            when "0111" =>
+                S <= res_shiftRight;
+            when "1000" =>
+                S <= res_nmaisum;
+            when "1001" =>
+                S <= res_nmenosum;
+            when others =>
+                S <= (others => '0');
+        end case;
+    end process;
 end comportamento;

@@ -16,5 +16,5 @@ architecture Behavior of ShiftLeft is
     signal shiftleft : STD_LOGIC_VECTOR (nbits-1 downto 0);
 begin
     shiftleft <= std_logic_vector(shift_left(unsigned(A), 1));
-    S <= shiftleft when sel = "0110";
+    S <= shiftleft when sel = "0110" else (others => '0');
 end Behavior;
