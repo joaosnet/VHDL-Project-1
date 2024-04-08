@@ -53,7 +53,7 @@ begin
 	);
 
 	process(clock)
-		file F: TEXT open READ_MODE is "entradas.txt";
+		file F: TEXT open READ_MODE is "c:\users\joaod\documents\gitHub\vhdl-project-1\entradas.txt";
 		variable L: LINE;
 		variable entrada : integer;
 	begin
@@ -73,7 +73,7 @@ begin
 	end process;
 
 	process(clock)
-		file F: TEXT open WRITE_MODE is "saida.txt";
+		file F: TEXT open WRITE_MODE is "c:\users\joaod\documents\gitHub\vhdl-project-1\saida.txt";
 		variable L: LINE;
 	begin
 		if rising_edge(clock) then

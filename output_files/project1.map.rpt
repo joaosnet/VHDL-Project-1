@@ -1,5 +1,5 @@
 Analysis & Elaboration report for project1
-Sun Apr 07 19:03:29 2024
+Mon Apr 08 09:44:56 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -9,8 +9,20 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  4. Parameter Settings for User Entity Instance: sd:dut
+  5. Parameter Settings for User Entity Instance: sd:dut|Soma:inst_soma
+  6. Parameter Settings for User Entity Instance: sd:dut|Subtracao:inst_subtracao
+  7. Parameter Settings for User Entity Instance: sd:dut|andlogic:inst_and
+  8. Parameter Settings for User Entity Instance: sd:dut|orlogic:inst_or
+  9. Parameter Settings for User Entity Instance: sd:dut|nota:inst_notA
+ 10. Parameter Settings for User Entity Instance: sd:dut|notb:inst_notB
+ 11. Parameter Settings for User Entity Instance: sd:dut|ShiftLeft:inst_shiftLeft
+ 12. Parameter Settings for User Entity Instance: sd:dut|ShiftRight:inst_shiftRight
+ 13. Parameter Settings for User Entity Instance: sd:dut|NmaisUm:inst_nmaisum
+ 14. Parameter Settings for User Entity Instance: sd:dut|NmenosUm:inst_nmenosum
+ 15. Analysis & Elaboration Settings
+ 16. Port Connectivity Checks: "sd:dut"
+ 17. Analysis & Elaboration Messages
 
 
 
@@ -37,7 +49,7 @@ agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Failed - Sun Apr 07 19:03:29 2024           ;
+; Analysis & Elaboration Status ; Successful - Mon Apr 08 09:44:56 2024       ;
 ; Quartus Prime Version         ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                 ; project1                                    ;
 ; Top-level Entity Name         ; testbench                                   ;
@@ -66,6 +78,116 @@ agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 +----------------------------+-------------+
+
+
++-----------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut ;
++----------------+-------+----------------------------+
+; Parameter Name ; Value ; Type                       ;
++----------------+-------+----------------------------+
+; nbits          ; 4     ; Signed Integer             ;
++----------------+-------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut|Soma:inst_soma ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; nbits          ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut|Subtracao:inst_subtracao ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; nbits          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut|andlogic:inst_and ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; nbits          ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut|orlogic:inst_or ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; nbits          ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut|nota:inst_notA ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; nbits          ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut|notb:inst_notB ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; nbits          ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut|ShiftLeft:inst_shiftLeft ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; nbits          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut|ShiftRight:inst_shiftRight ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; nbits          ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut|NmaisUm:inst_nmaisum ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; nbits          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sd:dut|NmenosUm:inst_nmenosum ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; nbits          ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -155,13 +277,25 @@ agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sd:dut"                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; in_a ; Input  ; Info     ; Stuck at GND                                                                        ;
+; in_b ; Input  ; Info     ; Stuck at GND                                                                        ;
+; sel  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Apr 07 19:03:21 2024
+    Info: Processing started: Mon Apr 08 09:44:48 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project1 -c project1 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -183,71 +317,299 @@ Info (12021): Found 2 design units, including 1 entities, in source file shiftle
 Info (12021): Found 2 design units, including 1 entities, in source file sd.vhd
     Info (12022): Found design unit 1: sd-comportamento File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 39
     Info (12023): Found entity 1: sd File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 28
-Info (12021): Found 2 design units, including 1 entities, in source file or_logic.vhd
-    Info (12022): Found design unit 1: Or_Logic-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 15
-    Info (12023): Found entity 1: Or_Logic File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file not_b.vhd
-    Info (12022): Found design unit 1: notb-comportamento File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_b.vhd Line: 16
-    Info (12023): Found entity 1: notb File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_b.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file not_a.vhd
-    Info (12022): Found design unit 1: not_a-comportamento File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 16
-    Info (12023): Found entity 1: not_a File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file orlogic.vhd
+    Info (12022): Found design unit 1: orlogic-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 15
+    Info (12023): Found entity 1: orlogic File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file notb.vhd
+    Info (12022): Found design unit 1: notb-comportamento File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 17
+    Info (12023): Found entity 1: notb File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file nota.vhd
+    Info (12022): Found design unit 1: nota-comportamento File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 17
+    Info (12023): Found entity 1: nota File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file nmenosum.vhd
     Info (12022): Found design unit 1: NmenosUm-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 15
     Info (12023): Found entity 1: NmenosUm File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file nmaisum.vhd
     Info (12022): Found design unit 1: NmaisUm-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 15
     Info (12023): Found entity 1: NmaisUm File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file and_logic.vhd
-    Info (12022): Found design unit 1: And_Logic-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 15
-    Info (12023): Found entity 1: And_Logic File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file andlogic.vhd
+    Info (12022): Found design unit 1: andlogic-Behavior File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 15
+    Info (12023): Found entity 1: andlogic File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 5
 Info (12127): Elaborating entity "testbench" for the top level hierarchy
 Warning (10873): Using initial value X (don't care) for net "A" at testbench.vhd(41) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd Line: 41
 Warning (10873): Using initial value X (don't care) for net "B" at testbench.vhd(41) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd Line: 41
 Warning (10873): Using initial value X (don't care) for net "sel" at testbench.vhd(42) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd Line: 42
 Info (12128): Elaborating entity "sd" for hierarchy "sd:dut" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd Line: 47
-Info (12128): Elaborating entity "Soma" for hierarchy "sd:dut|Soma:inst_soma" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 126
-Info (12128): Elaborating entity "Subtracao" for hierarchy "sd:dut|Subtracao:inst_subtracao" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 127
+Info (12128): Elaborating entity "Soma" for hierarchy "sd:dut|Soma:inst_soma" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 144
+Info (12128): Elaborating entity "Subtracao" for hierarchy "sd:dut|Subtracao:inst_subtracao" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 154
 Info (10041): Inferred latch for "S[0]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
 Info (10041): Inferred latch for "S[1]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
 Info (10041): Inferred latch for "S[2]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
 Info (10041): Inferred latch for "S[3]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
-Info (12128): Elaborating entity "And_Logic" for hierarchy "sd:dut|And_Logic:inst_and" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 128
-Info (10041): Inferred latch for "S[0]" at and_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 19
-Info (10041): Inferred latch for "S[1]" at and_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 19
-Info (10041): Inferred latch for "S[2]" at and_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 19
-Info (10041): Inferred latch for "S[3]" at and_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/and_logic.vhd Line: 19
-Info (12128): Elaborating entity "Or_Logic" for hierarchy "sd:dut|Or_Logic:inst_or" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 129
-Info (10041): Inferred latch for "S[0]" at or_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 19
-Info (10041): Inferred latch for "S[1]" at or_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 19
-Info (10041): Inferred latch for "S[2]" at or_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 19
-Info (10041): Inferred latch for "S[3]" at or_logic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/or_logic.vhd Line: 19
-Info (12128): Elaborating entity "not_a" for hierarchy "sd:dut|not_a:inst_notA" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 130
-Info (10041): Inferred latch for "S[0]" at not_a.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 20
-Info (10041): Inferred latch for "S[1]" at not_a.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 20
-Info (10041): Inferred latch for "S[2]" at not_a.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 20
-Info (10041): Inferred latch for "S[3]" at not_a.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/not_a.vhd Line: 20
-Info (12128): Elaborating entity "ShiftLeft" for hierarchy "sd:dut|ShiftLeft:inst_shiftLeft" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 132
+Info (10041): Inferred latch for "S[4]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[5]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[6]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[7]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[8]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[9]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[10]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[11]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[12]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[13]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[14]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[15]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[16]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[17]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[18]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[19]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[20]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[21]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[22]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[23]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[24]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[25]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[26]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[27]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[28]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[29]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[30]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (10041): Inferred latch for "S[31]" at subtracao.vhd(20) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd Line: 20
+Info (12128): Elaborating entity "andlogic" for hierarchy "sd:dut|andlogic:inst_and" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 159
+Info (10041): Inferred latch for "S[0]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[1]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[2]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[3]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[4]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[5]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[6]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[7]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[8]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[9]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[10]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[11]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[12]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[13]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[14]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[15]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[16]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[17]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[18]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[19]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[20]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[21]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[22]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[23]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[24]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[25]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[26]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[27]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[28]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[29]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[30]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[31]" at andlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd Line: 19
+Info (12128): Elaborating entity "orlogic" for hierarchy "sd:dut|orlogic:inst_or" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 164
+Info (10041): Inferred latch for "S[0]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[1]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[2]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[3]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[4]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[5]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[6]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[7]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[8]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[9]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[10]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[11]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[12]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[13]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[14]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[15]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[16]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[17]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[18]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[19]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[20]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[21]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[22]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[23]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[24]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[25]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[26]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[27]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[28]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[29]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[30]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (10041): Inferred latch for "S[31]" at orlogic.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd Line: 19
+Info (12128): Elaborating entity "nota" for hierarchy "sd:dut|nota:inst_notA" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 169
+Info (10041): Inferred latch for "S[0]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[1]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[2]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[3]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[4]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[5]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[6]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[7]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[8]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[9]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[10]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[11]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[12]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[13]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[14]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[15]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[16]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[17]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[18]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[19]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[20]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[21]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[22]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[23]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[24]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[25]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[26]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[27]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[28]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[29]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[30]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (10041): Inferred latch for "S[31]" at nota.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd Line: 21
+Info (12128): Elaborating entity "notb" for hierarchy "sd:dut|notb:inst_notB" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 174
+Info (10041): Inferred latch for "S[0]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[1]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[2]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[3]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[4]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[5]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[6]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[7]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[8]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[9]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[10]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[11]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[12]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[13]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[14]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[15]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[16]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[17]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[18]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[19]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[20]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[21]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[22]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[23]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[24]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[25]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[26]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[27]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[28]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[29]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[30]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (10041): Inferred latch for "S[31]" at notb.vhd(21) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd Line: 21
+Info (12128): Elaborating entity "ShiftLeft" for hierarchy "sd:dut|ShiftLeft:inst_shiftLeft" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 179
 Info (10041): Inferred latch for "S[0]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
 Info (10041): Inferred latch for "S[1]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
 Info (10041): Inferred latch for "S[2]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
 Info (10041): Inferred latch for "S[3]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
-Info (12128): Elaborating entity "ShiftRight" for hierarchy "sd:dut|ShiftRight:inst_shiftRight" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 133
-Info (12128): Elaborating entity "NmaisUm" for hierarchy "sd:dut|NmaisUm:inst_nmaisum" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 134
+Info (10041): Inferred latch for "S[4]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[5]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[6]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[7]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[8]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[9]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[10]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[11]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[12]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[13]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[14]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[15]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[16]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[17]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[18]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[19]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[20]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[21]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[22]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[23]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[24]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[25]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[26]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[27]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[28]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[29]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[30]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (10041): Inferred latch for "S[31]" at shiftleft.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd Line: 19
+Info (12128): Elaborating entity "ShiftRight" for hierarchy "sd:dut|ShiftRight:inst_shiftRight" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 184
+Info (12128): Elaborating entity "NmaisUm" for hierarchy "sd:dut|NmaisUm:inst_nmaisum" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 189
 Info (10041): Inferred latch for "S[0]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
 Info (10041): Inferred latch for "S[1]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
 Info (10041): Inferred latch for "S[2]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
 Info (10041): Inferred latch for "S[3]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
-Info (12128): Elaborating entity "NmenosUm" for hierarchy "sd:dut|NmenosUm:inst_nmenosum" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 135
+Info (10041): Inferred latch for "S[4]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[5]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[6]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[7]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[8]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[9]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[10]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[11]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[12]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[13]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[14]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[15]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[16]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[17]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[18]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[19]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[20]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[21]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[22]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[23]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[24]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[25]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[26]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[27]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[28]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[29]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[30]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (10041): Inferred latch for "S[31]" at nmaisum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd Line: 19
+Info (12128): Elaborating entity "NmenosUm" for hierarchy "sd:dut|NmenosUm:inst_nmenosum" File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 194
 Info (10041): Inferred latch for "S[0]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
 Info (10041): Inferred latch for "S[1]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
 Info (10041): Inferred latch for "S[2]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
 Info (10041): Inferred latch for "S[3]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
-Error (12006): Node instance "inst_notB" instantiates undefined entity "not_b". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd Line: 131
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 1 error, 4 warnings
-    Error: Peak virtual memory: 4841 megabytes
-    Error: Processing ended: Sun Apr 07 19:03:29 2024
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:00
+Info (10041): Inferred latch for "S[4]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[5]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[6]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[7]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[8]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[9]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[10]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[11]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[12]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[13]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[14]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[15]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[16]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[17]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[18]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[19]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[20]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[21]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[22]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[23]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[24]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[25]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[26]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[27]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[28]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[29]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[30]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info (10041): Inferred latch for "S[31]" at nmenosum.vhd(19) File: C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd Line: 19
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4841 megabytes
+    Info: Processing ended: Mon Apr 08 09:44:56 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:01
 
 

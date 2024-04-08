@@ -30,9 +30,9 @@ entity sd is
 		nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
 	);
     port(
-        in_a, in_b, in_c : in std_logic_vector(nbits-1 downto 0);
+        in_a, in_b : in std_logic_vector(31 downto 0);
         sel : in std_logic_vector(3 downto 0);
-        S : out std_logic_vector(nbits-1 downto 0)
+        S : out std_logic_vector(31 downto 0)
     );
 end sd;
 
@@ -41,47 +41,61 @@ architecture comportamento of sd is
         generic(
             nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
-        port(
-            A, B : in std_logic_vector(nbits-1 downto 0);
-            S : out std_logic_vector(nbits-1 downto 0)
-        );
+        Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               sel : in  STD_LOGIC_VECTOR (3 downto 0);
+               S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
     component Subtracao
         generic(
             nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
-        port(
-            A, B : in std_logic_vector(nbits-1 downto 0);
-            S : out std_logic_vector(nbits-1 downto 0)
-        );
+        Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               sel : in  STD_LOGIC_VECTOR (3 downto 0);
+               S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
-    component And_Logic
-        port(
-            A, B : in std_logic_vector(nbits-1 downto 0);
-            S : out std_logic_vector(nbits-1 downto 0)
+    component andlogic
+        generic(
+            nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
+        Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               sel : in  STD_LOGIC_VECTOR (3 downto 0);
+               S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
-    component Or_Logic
-        port(
-            A, B : in std_logic_vector(nbits-1 downto 0);
-            S : out std_logic_vector(nbits-1 downto 0)
+    component orlogic
+        generic(
+            nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
+        Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               sel : in  STD_LOGIC_VECTOR (3 downto 0);
+               S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
-    component not_a
+    component nota
+        generic(
+            nbits : integer := 4
+        );
         port(
             A : in std_logic_vector(nbits-1 downto 0);
+            sel : in std_logic_vector(3 downto 0);
             S : out std_logic_vector(nbits-1 downto 0)
         );
     end component;
 
-    component not_b
+    component notb
+        generic(
+            nbits : integer := 4 -- Parâmetro genérico que define o número de bits
+        );
         port(
-            B : in std_logic_vector(nbits-1 downto 0);
-            S : out std_logic_vector(nbits-1 downto 0)
+            B : in std_logic_vector(nbits-1 downto 0); -- Portas de entrada op_a e B do tipo std_logic_vector
+            sel : in std_logic_vector(3 downto 0); -- Porta de entrada sel do tipo std_logic_vector
+            S : out std_logic_vector(nbits-1 downto 0) -- Porta de saída S do tipo std_logic_vector
         );
     end component;
 
@@ -89,50 +103,99 @@ architecture comportamento of sd is
         generic(
             nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
-        port(
-            A : in std_logic_vector(nbits-1 downto 0);
-            S : out std_logic_vector(nbits-1 downto 0)
-        );
+        Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               sel : in  STD_LOGIC_VECTOR (3 downto 0);
+               S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
     component ShiftRight
         generic(
             nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
-        port(
-            A : in std_logic_vector(nbits-1 downto 0);
-            S : out std_logic_vector(nbits-1 downto 0)
-        );
+        Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               sel : in  STD_LOGIC_VECTOR (3 downto 0);
+               S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
     component NmaisUm
-        port(
-            A : in std_logic_vector(nbits-1 downto 0);
-            S : out std_logic_vector(nbits-1 downto 0)
+        generic(
+            nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
+        Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               sel : in  STD_LOGIC_VECTOR (3 downto 0);
+               S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
     component NmenosUm
-        port(
-            A : in std_logic_vector(nbits-1 downto 0);
-            S : out std_logic_vector(nbits-1 downto 0)
+        generic(
+            nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
+        Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
+               sel : in  STD_LOGIC_VECTOR (3 downto 0);
+               S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
-    signal res : std_logic_vector(nbits-1 downto 0);
+    constant nbits_config : integer := 32; -- Constante nbits_config do tipo integer com valor 32
+
+    signal res : std_logic_vector(nbits_config-1 downto 0);
 
 
 begin
-    inst_soma : soma port map(A => in_a, B => in_b, S => res);
-    inst_subtracao : subtracao port map(A => in_a, B => in_b, S => res);
-    inst_and : and_logic port map(A => in_a, B => in_b, S => res);
-    inst_or : or_logic port map(A => in_a, B => in_b, S => res);
-    inst_notA : not_a port map(A => in_a, S => res);
-    inst_notB : not_b port map(B => in_b, S => res);
-    inst_shiftLeft : shiftleft port map(A => in_a, S => res);
-    inst_shiftRight : shiftright port map(A => in_a, S => res);
-    inst_nmaisum : nmaisum port map(A => in_a, S => res);
-    inst_nmenosum : nmenosum port map(A => in_a, S => res);
+    inst_soma : soma
+    generic map(
+        nbits => nbits_config
+    )
+    port map(
+        A => in_a, 
+        B => in_b, 
+        sel => sel, 
+        S => res
+    );
+    inst_subtracao : subtracao 
+    generic map(
+        nbits => nbits_config
+    )
+    port map(A => in_a, B => in_b, sel => sel, S => res);
+    inst_and : andlogic 
+    generic map(
+        nbits => nbits_config
+    )
+    port map(A => in_a, B => in_b, sel => sel, S => res);
+    inst_or : orlogic
+    generic map(
+        nbits => nbits_config
+    ) 
+    port map(A => in_a, B => in_b, sel => sel, S => res);
+    inst_notA : nota 
+    generic map(
+        nbits => nbits_config
+    )
+    port map(A => in_a, sel => sel, S => res);
+    inst_notB : notb 
+    generic map(
+        nbits => nbits_config
+    )
+    port map(B => in_b, sel => sel, S => res);
+    inst_shiftLeft : shiftleft 
+    generic map(
+        nbits => nbits_config
+    )
+    port map(A => in_a, sel => sel, S => res);
+    inst_shiftRight : shiftright 
+    generic map(
+        nbits => nbits_config
+    )
+    port map(A => in_a, sel => sel, S => res);
+    inst_nmaisum : nmaisum 
+    generic map(
+        nbits => nbits_config
+    )
+    port map(A => in_a, sel => sel, S => res);
+    inst_nmenosum : nmenosum 
+    generic map(
+        nbits => nbits_config
+    )
+    port map(A => in_a, sel => sel, S => res);
 
     S <= res;
 end comportamento;

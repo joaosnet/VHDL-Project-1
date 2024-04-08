@@ -10,56 +10,9 @@
 # Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:03:01 on Apr 05,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity somasub
-# -- Compiling architecture comportamento of somasub
-# End time: 08:03:01 on Apr 05,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:03:01 on Apr 05,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity shift
-# -- Compiling architecture comportamento of shift
-# End time: 08:03:01 on Apr 05,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:03:01 on Apr 05,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sd
-# -- Compiling architecture comportamento of sd
-# End time: 08:03:01 on Apr 05,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:03:01 on Apr 05,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mux
-# -- Compiling architecture comportamento of mux
-# End time: 08:03:01 on Apr 05,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:03:01 on Apr 05,2024
+# Start time: 09:48:40 on Apr 08,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -67,38 +20,190 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity testbench
 # -- Compiling architecture test of testbench
-# End time: 08:03:01 on Apr 05,2024, Elapsed time: 0:00:00
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Subtracao
+# -- Compiling architecture Behavior of Subtracao
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/soma.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/soma.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Soma
+# -- Compiling architecture Behavior of Soma
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftright.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftright.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftRight
+# -- Compiling architecture Behavior of ShiftRight
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftLeft
+# -- Compiling architecture Behavior of ShiftLeft
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sd
+# -- Compiling architecture comportamento of sd
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity orlogic
+# -- Compiling architecture Behavior of orlogic
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity notb
+# -- Compiling architecture comportamento of notb
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nota
+# -- Compiling architecture comportamento of nota
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NmenosUm
+# -- Compiling architecture Behavior of NmenosUm
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NmaisUm
+# -- Compiling architecture Behavior of NmaisUm
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:48:41 on Apr 08,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andlogic
+# -- Compiling architecture Behavior of andlogic
+# End time: 09:48:41 on Apr 08,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.testbench
 # vsim work.testbench 
-# Start time: 08:03:24 on Apr 05,2024
+# Start time: 09:48:48 on Apr 08,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.testbench(test)
 # Loading work.sd(comportamento)
-# Loading work.somasub(comportamento)
-# Loading work.mux(comportamento)
-# Loading work.shift(comportamento)
+# Loading work.soma(behavior)
+# Loading work.subtracao(behavior)
+# Loading work.andlogic(behavior)
+# Loading work.orlogic(behavior)
+# Loading work.nota(comportamento)
+# Loading work.notb(comportamento)
+# Loading work.shiftleft(behavior)
+# Loading work.shiftright(behavior)
+# Loading work.nmaisum(behavior)
+# Loading work.nmenosum(behavior)
 add wave -position insertpoint  \
-sim:/testbench/input_a \
-sim:/testbench/input_b \
-sim:/testbench/input_c \
-sim:/testbench/resultado \
-sim:/testbench/sel_somasub \
-sim:/testbench/sel_mux \
-sim:/testbench/clock \
-sim:/testbench/somasub_val \
-sim:/testbench/mux_val
+sim:/testbench/A \
+sim:/testbench/B \
+sim:/testbench/Result \
+sim:/testbench/sel \
+sim:/testbench/clock
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: joaod  Hostname: FOX  ProcessID: 20432
-#           Attempting to use alternate WLF file "./wlftc7x1f8".
+#           Attempting to use alternate WLF file "./wlft2vi7ew".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftc7x1f8
+#           Using alternate file: ./wlft2vi7ew
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 5 ns  Iteration: 0  Instance: /testbench
-# End time: 08:04:56 on Apr 05,2024, Elapsed time: 0:01:32
-# Errors: 0, Warnings: 3
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 ns  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25 ns  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 35 ns  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 45 ns  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 55 ns  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 65 ns  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 75 ns  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 85 ns  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 95 ns  Iteration: 0  Instance: /testbench
+# End time: 09:51:39 on Apr 08,2024, Elapsed time: 0:02:51
+# Errors: 0, Warnings: 13

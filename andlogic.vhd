@@ -1,8 +1,8 @@
--- or.vhd
+-- and_logic.vhd
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Or_Logic is
+entity andlogic is
 	generic(
 		nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
 	);
@@ -10,11 +10,11 @@ entity Or_Logic is
            B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
            sel : in  STD_LOGIC_VECTOR (3 downto 0);
            S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
-end Or_Logic;
+end andlogic;
 
-architecture Behavior of Or_Logic is
-signal or_gate : STD_LOGIC_VECTOR (nbits-1 downto 0);
+architecture Behavior of andlogic is
+    signal and_gate : STD_LOGIC_VECTOR (nbits-1 downto 0);
 begin
-    or_gate <= A or B;
-    S <= or_gate when sel="0011";
+    and_gate <= A and B;
+    S <= and_gate when sel="0010";
 end Behavior;

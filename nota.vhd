@@ -1,8 +1,9 @@
+-- nota.vhd
 library IEEE;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity not_a is
+entity nota is
     generic(
         nbits : integer := 4
     );
@@ -11,11 +12,11 @@ entity not_a is
         sel : in std_logic_vector(3 downto 0);
         S : out std_logic_vector(nbits-1 downto 0)
     );
-end not_a;
+end nota;
 
-architecture comportamento of not_a is
-    signal nota : std_logic_vector(nbits-1 downto 0);
+architecture comportamento of nota is
+    signal nota1 : std_logic_vector(nbits-1 downto 0);
 begin
-    nota <= std_logic_vector(not unsigned(A));
-    S <= nota when sel="0100";
+    nota1 <= std_logic_vector(not unsigned(A));
+    S <= nota1 when sel="0100";
 end comportamento;

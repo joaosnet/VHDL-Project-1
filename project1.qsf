@@ -61,10 +61,10 @@ set_global_assignment -name VHDL_FILE soma.vhd
 set_global_assignment -name VHDL_FILE shiftright.vhd
 set_global_assignment -name VHDL_FILE shiftleft.vhd
 set_global_assignment -name VHDL_FILE sd.vhd
-set_global_assignment -name VHDL_FILE or_logic.vhd
-set_global_assignment -name VHDL_FILE not_b.vhd
-set_global_assignment -name VHDL_FILE not_a.vhd
+set_global_assignment -name VHDL_FILE orlogic.vhd
+set_global_assignment -name VHDL_FILE notb.vhd
+set_global_assignment -name VHDL_FILE nota.vhd
 set_global_assignment -name VHDL_FILE nmenosum.vhd
 set_global_assignment -name VHDL_FILE nmaisum.vhd
-set_global_assignment -name VHDL_FILE and_logic.vhd
+set_global_assignment -name VHDL_FILE andlogic.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

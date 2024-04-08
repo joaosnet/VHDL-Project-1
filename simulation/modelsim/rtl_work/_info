@@ -8,206 +8,489 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/joaod/Documents/GitHub/VHDL-Project-1/simulation/modelsim
-Emux
-Z1 w1712187066
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Eandlogic
+Z1 w1712578528
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd
-Z6 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd
+Z4 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd
+Z5 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd
 l0
 L5
-VRKGK=RR__RN;C;KZf^SYV2
-!s100 4z@?__i=`agYYTC;a`MRK0
-Z7 OV;C;10.5b;63
+V>d_z2IWah^ZR;c4^zC;==0
+!s100 1`T<F2`4QT0FRQjZlaT672
+Z6 OV;C;10.5b;63
 31
-Z8 !s110 1712314981
+Z7 !s110 1712580521
 !i10b 1
-Z9 !s108 1712314981.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd|
-Z11 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/mux.vhd|
+Z8 !s108 1712580521.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd|
+Z10 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/andlogic.vhd|
 !i113 1
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
-Acomportamento
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavior
 R2
 R3
-R4
-DEx4 work 3 mux 0 22 RKGK=RR__RN;C;KZf^SYV2
+DEx4 work 8 andlogic 0 22 >d_z2IWah^ZR;c4^zC;==0
 l17
-L16
-V1kcOL9ghJ[[=:S1HFLMfL2
-!s100 n8j`zXE?niEWI6=W?VkCg1
-R7
+L15
+V`Zf[iH8a`AHa:WPS5_XbZ1
+!s100 RfhIzjYP]O14G0Ho`HC=[1
+R6
 31
-R8
+R7
 !i10b 1
+R8
 R9
 R10
+!i113 1
 R11
-!i113 1
 R12
-R13
-Esd
-Z14 w1712187475
+Enmaisum
+Z13 w1712527227
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
 R3
-R4
 R0
-Z15 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd
-Z16 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd
+Z15 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd
+Z16 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd
 l0
-L4
-VOM623>ck[36MCgQJ?fXD:3
-!s100 ;Mz;eQ?ATjKn4WhMMND6F2
-R7
+L6
+VBe6:^k3ZKbQ@^9XIA<b3l3
+!s100 MUcDmfb26A5QBMkBheJoz0
+R6
 31
-R8
+R7
 !i10b 1
-R9
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd|
-Z18 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd|
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd|
+Z18 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmaisum.vhd|
 !i113 1
+R11
 R12
-R13
-Acomportamento
+Abehavior
+R14
+R2
 R3
-R4
-DEx4 work 2 sd 0 22 OM623>ck[36MCgQJ?fXD:3
-l54
-L12
-V>@LUPRzV]9Y4T2hnDi;GN3
-!s100 NO@BTPERTVUjCVNWjBITQ2
-R7
+DEx4 work 7 nmaisum 0 22 Be6:^k3ZKbQ@^9XIA<b3l3
+l17
+L15
+V8H;K9iCUiAMnd;aI0LXa^2
+!s100 ZRTefz[<]KX;C1[ih3kU92
+R6
 31
-R8
+R7
 !i10b 1
-R9
+R8
 R17
 R18
 !i113 1
+R11
 R12
-R13
-Eshift
-Z19 w1712187046
+Enmenosum
+Z19 w1712527186
+R14
 R2
 R3
-R4
 R0
-Z20 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd
-Z21 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd
+Z20 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd
+Z21 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd
 l0
-L5
-V^GenLz1nILMd@CDAz:N[>3
-!s100 k81Em;7ff8gWaEGkY4KTL2
-R7
+L6
+VJ^[`<O=XzEh^]CdOa^bhA2
+!s100 EWZiEbP<HO51Ak]d=G80?0
+R6
 31
-R8
+R7
 !i10b 1
-R9
-Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd|
-Z23 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shift.vhd|
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd|
+Z23 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nmenosum.vhd|
 !i113 1
+R11
 R12
-R13
-Acomportamento
+Abehavior
+R14
 R2
 R3
-R4
-DEx4 work 5 shift 0 22 ^GenLz1nILMd@CDAz:N[>3
-l18
-L17
-V^LI:zMN;UPECzVI1[@ZmK1
-!s100 @?Oj[V5YhLgAG[Nzi5C440
-R7
+DEx4 work 8 nmenosum 0 22 J^[`<O=XzEh^]CdOa^bhA2
+l17
+L15
+VR8@23VNcVo<RD<PMKo;j:3
+!s100 EfGFW>znUG=11fP47Yf`L3
+R6
 31
-R8
+R7
 !i10b 1
-R9
+R8
 R22
 R23
 !i113 1
+R11
 R12
-R13
-Esomasub
-Z24 w1712187001
+Enota
+Z24 w1712579103
+R14
 R2
 R3
-R4
 R0
-Z25 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd
-Z26 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd
+Z25 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd
+Z26 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd
 l0
-L5
-V`cB9`iP48Q]I3HkF;4VgL0
-!s100 F@SWDTRGMB3aXbRP?>9g42
-R7
+L6
+V76H6W1SblddL=fm@S0fQ:0
+!s100 oWSEbdRU2Wfzaof34MYkX2
+R6
 31
-R8
+R7
 !i10b 1
-R9
-Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd|
-Z28 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/somasub.vhd|
+R8
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd|
+Z28 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/nota.vhd|
 !i113 1
+R11
 R12
-R13
 Acomportamento
+R14
 R2
 R3
-R4
-DEx4 work 7 somasub 0 22 `cB9`iP48Q]I3HkF;4VgL0
-l18
-L16
-V3?@G<QWO>1d]@>H3EX15d1
-!s100 mKS9[XG<flV1[Xl:SQhXR0
-R7
+DEx4 work 4 nota 0 22 76H6W1SblddL=fm@S0fQ:0
+l19
+L17
+V[7V]9[VSbd`Y[H9GmMmTz3
+!s100 ?5;e__G[KcN0[bDP^o;Yc0
+R6
 31
-R8
+R7
 !i10b 1
-R9
+R8
 R27
 R28
 !i113 1
+R11
 R12
-R13
-Etestbench
-Z29 w1712314928
+Enotb
+Z29 w1712579113
+R14
 R2
 R3
-R4
 R0
-Z30 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd
-Z31 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd
+Z30 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd
+Z31 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd
 l0
-L7
-V?iIUIH5LF>4B282mKjZ^m1
-!s100 ?_kDeF3GT@6>n1<?_P3TD2
-R7
+L6
+Vk:gKV6DCC]bz29@ZgHPIY3
+!s100 HB7i_<`:U2hl@5Fkzjjgd3
+R6
 31
-R8
+R7
 !i10b 1
-R9
-Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd|
-Z33 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd|
+R8
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd|
+Z33 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/notb.vhd|
 !i113 1
+R11
 R12
-R13
-Atest
+Acomportamento
+R14
 R2
 R3
-R4
-DEx4 work 9 testbench 0 22 ?iIUIH5LF>4B282mKjZ^m1
-l27
-L10
-VM41iR9gjVYJI^m_B98oG`2
-!s100 N<<=GbNhmn5d:z?[Z51A11
-R7
+DEx4 work 4 notb 0 22 k:gKV6DCC]bz29@ZgHPIY3
+l19
+L17
+VaTjBLSJI;HGV6=Kj^VkRl0
+!s100 7ko6dFH^Xh_^TPRYCjjj:2
+R6
 31
-R8
+R7
 !i10b 1
-R9
+R8
 R32
 R33
 !i113 1
+R11
 R12
-R13
+Eorlogic
+Z34 w1712578746
+R2
+R3
+R0
+Z35 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd
+Z36 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd
+l0
+L5
+V?6gW7U=BVL]gImC6k8?9i2
+!s100 K^]<;LjKac0YF5[B6ID502
+R6
+31
+R7
+!i10b 1
+R8
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd|
+Z38 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/orlogic.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 7 orlogic 0 22 ?6gW7U=BVL]gImC6k8?9i2
+l17
+L15
+VFcURIDDAW_gh`bT;6VGOh2
+!s100 Z4P6L7ca<]hmc6`O9_nYn0
+R6
+31
+R7
+!i10b 1
+R8
+R37
+R38
+!i113 1
+R11
+R12
+Esd
+Z39 w1712580284
+R2
+R3
+R0
+Z40 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd
+Z41 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd
+l0
+L28
+V4_XWZni:XH@WgSezhN;_f3
+!s100 >;9NE>no^<2QQcYoH7;Gc1
+R6
+31
+R7
+!i10b 1
+R8
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd|
+Z43 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/sd.vhd|
+!i113 1
+R11
+R12
+Acomportamento
+R2
+R3
+DEx4 work 2 sd 0 22 4_XWZni:XH@WgSezhN;_f3
+l143
+L39
+V=VL?S[A6=Ie^IQ;2X9X<U0
+!s100 `LMm:Sc7I12;FE?ZJjH`V1
+R6
+31
+R7
+!i10b 1
+R8
+R42
+R43
+!i113 1
+R11
+R12
+Eshiftleft
+Z44 w1712526907
+R14
+R2
+R3
+R0
+Z45 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd
+Z46 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd
+l0
+L6
+V:R1ObazW@CN;fOP7QUITg3
+!s100 ]gz;`;_G?C2YK6D^hXa1R3
+R6
+31
+R7
+!i10b 1
+R8
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd|
+Z48 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftleft.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R14
+R2
+R3
+DEx4 work 9 shiftleft 0 22 :R1ObazW@CN;fOP7QUITg3
+l17
+L15
+V`bHB7k;Jf8?9R?GfK4flL1
+!s100 7_GnSbAdoZX8RYc[O5W3d1
+R6
+31
+R7
+!i10b 1
+R8
+R47
+R48
+!i113 1
+R11
+R12
+Eshiftright
+Z49 w1712526866
+R14
+R2
+R3
+R0
+Z50 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftright.vhd
+Z51 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftright.vhd
+l0
+L6
+V`^BW>4JMf3_<iNdcR<1mA2
+!s100 mU1UQf@geDMM<c4Z`=zLQ0
+R6
+31
+R7
+!i10b 1
+R8
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftright.vhd|
+Z53 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/shiftright.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R14
+R2
+R3
+DEx4 work 10 shiftright 0 22 `^BW>4JMf3_<iNdcR<1mA2
+l17
+L15
+VAOmMN:IYzUBb_h<PzKdGN2
+!s100 F[VofHonVSZ5jiA_F6dBF1
+R6
+31
+R7
+!i10b 1
+R8
+R52
+R53
+!i113 1
+R11
+R12
+Esoma
+Z54 w1712526700
+R14
+R2
+R3
+R0
+Z55 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/soma.vhd
+Z56 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/soma.vhd
+l0
+L6
+V7fjL;^bl@gFUeE^F7O0d`3
+!s100 fROk]mK6G1l?gBNSKTnMX1
+R6
+31
+R7
+!i10b 1
+R8
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/soma.vhd|
+Z58 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/soma.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R14
+R2
+R3
+DEx4 work 4 soma 0 22 7fjL;^bl@gFUeE^F7O0d`3
+l18
+L16
+Vj1Ej?;8ABbdIjDjIhPM@80
+!s100 RJ5IETNOBVcUW;V4KzHUO1
+R6
+31
+R7
+!i10b 1
+R8
+R57
+R58
+!i113 1
+R11
+R12
+Esubtracao
+Z59 w1712526326
+R14
+R2
+R3
+R0
+Z60 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd
+Z61 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd
+l0
+L6
+VYc>VV>k[MR=IM^B9EA1;V2
+!s100 ZZT?g9NBkWCiISde1Fm8a1
+R6
+31
+R7
+!i10b 1
+R8
+Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd|
+Z63 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/subtracao.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R14
+R2
+R3
+DEx4 work 9 subtracao 0 22 Yc>VV>k[MR=IM^B9EA1;V2
+l18
+L16
+VlRZCf`M=<[U:0?S51=3dE0
+!s100 I9i>f0@d;1l<9D`8_0z[C2
+R6
+31
+R7
+!i10b 1
+R8
+R62
+R63
+!i113 1
+R11
+R12
+Etestbench
+Z64 w1712580511
+R14
+R2
+R3
+R0
+Z65 8C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd
+Z66 FC:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd
+l0
+L29
+V0DLd7OmQz5he?ceOV6^cU1
+!s100 9`>=RC>neT_45PZgW__MM3
+R6
+31
+R7
+!i10b 1
+Z67 !s108 1712580520.000000
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd|
+Z69 !s107 C:/Users/joaod/Documents/GitHub/VHDL-Project-1/testbench.vhd|
+!i113 1
+R11
+R12
+Atest
+R14
+R2
+R3
+DEx4 work 9 testbench 0 22 0DLd7OmQz5he?ceOV6^cU1
+l46
+L32
+VRSEQ5m1]AY?La3;8dio8>0
+!s100 H=S0HS2HiCoF3Rm38LbA;2
+R6
+31
+R7
+!i10b 1
+R67
+R68
+R69
+!i113 1
+R11
+R12
