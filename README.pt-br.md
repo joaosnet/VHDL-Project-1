@@ -40,7 +40,7 @@
         </td>
                 <td align="center">
             <a href="https://www.instagram.com/c.j_silva/" title="UX Designer Backend Developer">
-                <img src="https://scontent.cdninstagram.com/v/t51.2885-19/361771304_833908247939807_9019221283482484802_n.jpg?_nc_ht=scontent.cdninstagram.com&_nc_cat=111&_nc_ohc=FD6kAfWTCXkAX9zaGIf&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfCIP_Uf5IWmJjWjrpcqJSD_qgNOpdvNWgg5czXL_vjKkA&oe=66126EF2&_nc_sid=10d13b" width="100px;" alt="Carla Silva's Photo"/><br>
+                <img src="https://avatars.githubusercontent.com/u/143609183?v=4" width="100px;" alt="Carla Silva's Photo"/><br>
                 <sub>
                     <b>Carla Silva</b>
                 </sub>
