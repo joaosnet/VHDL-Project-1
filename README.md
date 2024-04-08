@@ -1,10 +1,6 @@
 # VHDL Project 1
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/joaosnet/vhdl-project-1?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/joaosnet/vhdl-project-1?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/joaosnet/vhdl-project-1?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/joaosnet/vhdl-project-1?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/joaosnet/vhdl-project-1?style=for-the-badge)
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/joaosnet/vhdl-project-1/blob/master/README.pt-br.md)
 
 <img src="https://github.com/joaosnet/vhdl-project-1/blob/main/images/1.png"/>
