@@ -11,8 +11,19 @@
 
 ## Project Description
 
+● It is desired to design an Arithmetic Logic Unit (ALU) that performs the operations of addition, subtraction, AND, OR, NOT, 1 bit shift to the left, 1 bit shift to the right, increment of 1, decrement of 1;
+
+● This ALU has two data inputs A and B;
+
+● And an S output.
+
+● The result will be assigned to S according to one of the selected operations, for this there is an auxiliary input, called SEL, which indicates which operation should be performed.
+
+● A VHDL file must be designed for each operation, which must be connected to another VHDL file (top-level). You must use the numeric_std library (operands +,-,and, ...)
 
 ## Skills Developed
+
+<img src="https://img.shields.io/badge/VHDL-00599C?style=for-the-badge&logo=vhdl&logoColor=white"/> <img src="https://img.shields.io/badge/ModelSim-00599C?style=for-the-badge&logo=ModelSim&logoColor=white"/> <img src="https://img.shields.io/badge/Quartus-00599C?style=for-the-badge&logo=Quartus&logoColor=white"/>
 
 
 ## 🤝 Contributors
