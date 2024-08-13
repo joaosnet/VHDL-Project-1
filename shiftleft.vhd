@@ -8,7 +8,6 @@ entity ShiftLeft is
 		nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
 	);
     Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-           sel : in  STD_LOGIC_VECTOR (3 downto 0);
            S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
 end ShiftLeft;
 
@@ -16,5 +15,5 @@ architecture Behavior of ShiftLeft is
     signal shiftleft : STD_LOGIC_VECTOR (nbits-1 downto 0);
 begin
     shiftleft <= std_logic_vector(shift_left(unsigned(A), 1));
-    S <= shiftleft when sel = "0110" else (others => '0');
+    S <= shiftleft;
 end Behavior;

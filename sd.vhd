@@ -22,13 +22,12 @@
 -- Disciplina: Projetos de Hardware e Interfaceamento
 
 library IEEE;
-library work;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity sd is
-	generic(
-		nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
-	);
+    generic(
+        nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
+    );
     port(
         in_a, in_b : in std_logic_vector(31 downto 0);
         sel : in std_logic_vector(3 downto 0);
@@ -37,13 +36,13 @@ entity sd is
 end sd;
 
 architecture comportamento of sd is
+
     component Soma
         generic(
             nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
         Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
                B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-               sel : in  STD_LOGIC_VECTOR (3 downto 0);
                S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
@@ -53,7 +52,6 @@ architecture comportamento of sd is
         );
         Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
                B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-               sel : in  STD_LOGIC_VECTOR (3 downto 0);
                S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
@@ -63,7 +61,6 @@ architecture comportamento of sd is
         );
         Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
                B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-               sel : in  STD_LOGIC_VECTOR (3 downto 0);
                S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
@@ -73,7 +70,6 @@ architecture comportamento of sd is
         );
         Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
                B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-               sel : in  STD_LOGIC_VECTOR (3 downto 0);
                S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
@@ -83,7 +79,6 @@ architecture comportamento of sd is
         );
         port(
             A : in std_logic_vector(nbits-1 downto 0);
-            sel : in std_logic_vector(3 downto 0);
             S : out std_logic_vector(nbits-1 downto 0)
         );
     end component;
@@ -94,7 +89,6 @@ architecture comportamento of sd is
         );
         port(
             B : in std_logic_vector(nbits-1 downto 0); -- Portas de entrada op_a e B do tipo std_logic_vector
-            sel : in std_logic_vector(3 downto 0); -- Porta de entrada sel do tipo std_logic_vector
             S : out std_logic_vector(nbits-1 downto 0) -- Porta de saída S do tipo std_logic_vector
         );
     end component;
@@ -104,7 +98,6 @@ architecture comportamento of sd is
             nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
         Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-               sel : in  STD_LOGIC_VECTOR (3 downto 0);
                S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
@@ -113,7 +106,6 @@ architecture comportamento of sd is
             nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
         Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-               sel : in  STD_LOGIC_VECTOR (3 downto 0);
                S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
@@ -122,7 +114,6 @@ architecture comportamento of sd is
             nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
         Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-               sel : in  STD_LOGIC_VECTOR (3 downto 0);
                S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
@@ -131,72 +122,107 @@ architecture comportamento of sd is
             nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
         );
         Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-               sel : in  STD_LOGIC_VECTOR (3 downto 0);
                S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
     end component;
 
     constant nbits_config : integer := 32; -- Constante nbits_config do tipo integer com valor 32
 
-    signal res : std_logic_vector(nbits_config-1 downto 0);
     signal res_soma, res_subtracao, res_and, res_or, res_notA, res_notB, res_shiftLeft, res_shiftRight, res_nmaisum, res_nmenosum : std_logic_vector(nbits_config-1 downto 0);
 
-
 begin
-    inst_soma : soma
+    inst_soma : Soma
     generic map(
         nbits => nbits_config
     )
     port map(
-        A => in_a, 
-        B => in_b, 
-        sel => sel, 
+        A => in_a(nbits_config-1 downto 0), 
+        B => in_b(nbits_config-1 downto 0), 
         S => res_soma
     );
-    inst_subtracao : subtracao 
+
+    inst_subtracao : Subtracao 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, B => in_b, sel => sel, S => res_subtracao);
+    port map(
+        A => in_a(nbits_config-1 downto 0), 
+        B => in_b(nbits_config-1 downto 0), 
+        S => res_subtracao
+    );
+
     inst_and : andlogic 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, B => in_b, sel => sel, S => res_and);
+    port map(
+        A => in_a(nbits_config-1 downto 0), 
+        B => in_b(nbits_config-1 downto 0), 
+        S => res_and
+    );
+
     inst_or : orlogic
     generic map(
         nbits => nbits_config
     ) 
-    port map(A => in_a, B => in_b, sel => sel, S => res_or);
+    port map(
+        A => in_a(nbits_config-1 downto 0), 
+        B => in_b(nbits_config-1 downto 0), 
+        S => res_or
+    );
+
     inst_notA : nota 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, sel => sel, S => res_notA);
+    port map(
+        A => in_a(nbits_config-1 downto 0), 
+        S => res_notA
+    );
+
     inst_notB : notb 
     generic map(
         nbits => nbits_config
     )
-    port map(B => in_b, sel => sel, S => res_notB);
-    inst_shiftLeft : shiftleft 
+    port map(
+        B => in_b(nbits_config-1 downto 0), 
+        S => res_notB
+    );
+
+    inst_shiftLeft : ShiftLeft 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, sel => sel, S => res_shiftLeft);
-    inst_shiftRight : shiftright 
+    port map(
+        A => in_a(nbits_config-1 downto 0), 
+        S => res_shiftLeft
+    );
+
+    inst_shiftRight : ShiftRight 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, sel => sel, S => res_shiftRight);
-    inst_nmaisum : nmaisum 
+    port map(
+        A => in_a(nbits_config-1 downto 0), 
+        S => res_shiftRight
+    );
+
+    inst_nmaisum : NmaisUm 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, sel => sel, S => res_nmaisum);
-    inst_nmenosum : nmenosum 
+    port map(
+        A => in_a(nbits_config-1 downto 0), 
+        S => res_nmaisum
+    );
+
+    inst_nmenosum : NmenosUm 
     generic map(
         nbits => nbits_config
     )
-    port map(A => in_a, sel => sel, S => res_nmenosum);
+    port map(
+        A => in_a(nbits_config-1 downto 0), 
+        S => res_nmenosum
+    );
 
     process(sel, res_soma, res_subtracao, res_and, res_or, res_notA, res_notB, res_shiftLeft, res_shiftRight, res_nmaisum, res_nmenosum)
     begin

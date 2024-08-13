@@ -9,7 +9,6 @@ entity Soma is
 	);
     Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
            B : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-           sel : in  STD_LOGIC_VECTOR (3 downto 0);
            S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
 end Soma;
 
@@ -17,5 +16,5 @@ architecture Behavior of Soma is
     signal soma : std_logic_vector(nbits-1 downto 0);
 begin
     soma <= std_logic_vector(unsigned(A) + unsigned(B));
-    S <= soma when sel="0000" else (others => '0');
+    S <= soma;
 end Behavior;

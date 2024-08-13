@@ -8,7 +8,6 @@ entity ShiftRight is
         nbits : integer := 4 -- Parâmetro genérico nbits com valor padrão 4
     );
     Port ( A : in  STD_LOGIC_VECTOR (nbits-1 downto 0);
-           sel : in  STD_LOGIC_VECTOR (3 downto 0);
            S : out  STD_LOGIC_VECTOR (nbits-1 downto 0));
 end ShiftRight;
 
@@ -16,5 +15,5 @@ architecture Behavior of ShiftRight is
     signal shiftright : STD_LOGIC_VECTOR (nbits-1 downto 0);
 begin
     shiftright <= std_logic_vector(shift_right(unsigned(A), 1));
-    S <= shiftright when sel="0111" else (others => '0');
+    S <= shiftright;
 end Behavior;

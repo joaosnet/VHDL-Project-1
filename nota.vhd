@@ -9,7 +9,6 @@ entity nota is
     );
     port(
         A : in std_logic_vector(nbits-1 downto 0);
-        sel : in std_logic_vector(3 downto 0);
         S : out std_logic_vector(nbits-1 downto 0)
     );
 end nota;
@@ -18,5 +17,5 @@ architecture comportamento of nota is
     signal nota1 : std_logic_vector(nbits-1 downto 0);
 begin
     nota1 <= std_logic_vector(not unsigned(A));
-    S <= nota1 when sel="0100" else (others => '0');
+    S <= nota1;
 end comportamento;
