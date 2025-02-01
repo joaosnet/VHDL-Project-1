@@ -39,10 +39,10 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY sd
+set_global_assignment -name TOP_LEVEL_ENTITY testbench
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:16:57  APRIL 02, 2024"
-set_global_assignment -name LAST_QUARTUS_VERSION "17.0.1 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
@@ -67,7 +67,6 @@ set_global_assignment -name VHDL_FILE andlogic.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to in_a[31]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to in_a[26]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to in_a[29]
@@ -168,3 +167,4 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to S[28]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to S[29]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to S[30]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to S[31]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
